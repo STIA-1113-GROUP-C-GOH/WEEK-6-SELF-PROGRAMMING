@@ -1,0 +1,56 @@
+package selfProgramming;
+
+import java.util.Scanner;
+
+public class ClassExercise {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter the Maths marks: ");
+		int sub=scan.nextInt();
+		
+		System.out.println("Enter Science marks: ");
+		int sub2=scan.nextInt();
+		
+		if ((sub>=50) && (sub2>=50)) {
+			System.out.println("You passed both subjects");
+		}
+		else if(sub>=50) {
+			System.out.println("You passed Maths only");
+		}
+		else if(sub2>=50) {
+			System.out.println("You passed Science only");
+		}
+		else {
+			System.out.println("You failed both subjects");
+		}
+		
+		if (sub>sub2) {
+			System.out.println("Maths marks is higher than Science");
+		}
+		else {
+			System.out.println("Science marks is higher than Maths");
+		}
+		
+		int avg= (sub+sub2)/2;
+		System.out.println("Average marks is: " + avg);
+		
+		
+		if ((avg>=80) && (avg<=100)) {
+			System.out.println("You got an A");
+		}
+		else if ((avg>=60) && (avg<=79)) {
+			System.out.println("You got a B");
+		}
+		else if ((avg>=50) && (avg<=59)) {
+			System.out.println("You got a C");
+		}
+		else {
+			System.out.println("You failed");
+		}
+		
+		scan.close();
+	}
+}
