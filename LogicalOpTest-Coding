@@ -1,0 +1,40 @@
+package selfProgramming;
+
+public class RelationalLogicalOpTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int age=18;
+		double weight=71.23;
+		int height=191;
+		boolean married=false;
+		boolean attached=false;
+		char gender='m';
+		
+		System.out.println(!married && !attached && (gender== 'm'));//True
+		System.out.println(married &&(gender=='f'));//False
+		System.out.println((height>=180) && (weight>=65) && (weight<=80));//True
+		System.out.println((height>=180) || (height>=90));//True
+		System.out.println(!married && (gender=='m') && (age>=21) || (age<=35) && (height>180) && (weight>=70) && (weight<=80));
+		
+		int year=1582;
+		int month=10;
+		int day=15;
+		
+		System.out.println((year<=1582) && (month>=1) || (month<=12) && (day>=1) || (day<=31));
+		
+		double d1= 2.2+4.4;
+		double d2=6.6;
+		int d3= 2+4;
+		int d4=6;
+		String s1="Azman";
+		String s2="Azman";
+		
+		System.out.println(d1==d2);
+		System.out.println(d3==d4);
+		System.out.println(s1==s2);
+
+
+	}
+
+}
